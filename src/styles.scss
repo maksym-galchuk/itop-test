@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background: #F6F6F6;
+}
+
+.converter {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    color: #1F2261;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 1px solid #E7E7EE;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  &__fields {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__line {
+    height: 1px;
+    background: #E7E7EE;
+  }
+
+  &__item {
+    &-label {
+      color: #989898;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    &-select {
+      color: #26278D;
+      font-size: 20px;
+      font-weight: 500;
+      background: transparent;
+      border: none;
+      margin-right: 15px;
+    }
+
+    &-input {
+      border-radius: 7px;
+      background: #EFEFEF;
+      color: #3C3C3C;
+      text-align: right;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 11px 14px;
+      border: none;
+      max-width: 150px;
+    }
+  }
+}
+
+
+
+

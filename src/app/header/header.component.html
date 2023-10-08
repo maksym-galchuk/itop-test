@@ -1,0 +1,15 @@
+<header *ngIf="!!rates" class="converter__header">
+  <p class="converter__header-text">$1 — {{ 1 / rates['USD'] || 1 | currency : "UAH" : "symbol-narrow" }}</p>
+  <p class="converter__header-text">€1 — {{ 1 / rates['EUR'] || 1 | currency : "UAH" : "symbol-narrow" }}</p>
+</header>
+<header *ngIf="!rates" class="converter__header">
+  <p class="converter__header-text">Loading...</p>
+</header>
+
+
+
+
+
+
+
+
